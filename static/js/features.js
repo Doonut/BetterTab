@@ -14,7 +14,7 @@ define(function() {
         {'name': 'To Do', 'js': 'todo', 'icon': '', 'color': '#B2DA59'},
         {'name': 'Calendar', 'js': 'calendar', 'icon': '', 'color': '#4386F9'},
         {'name': 'Uber', 'js': 'uber', 'icon': '', 'color': '#2F2D3C'},
-        {'name': 'RecentTabs', 'js': 'recenttabs', 'icon': '', 'color': '#CC181E'},
+        {'name': 'RecentTabs', 'js': 'recenttabs', 'icon': '<img src="https://cdn4.iconfinder.com/data/icons/miu/24/circle_backup_time_history_recent_time-machine_-32.png" />', 'color': '#993333'},
         {'name': 'Clock', 'js': 'clock', 'icon': '', 'color': '#000'}
     ];
 });
