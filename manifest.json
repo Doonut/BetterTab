@@ -1,0 +1,23 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "chrome_url_overrides": {
+      "newtab": "tab.html"
+   },
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com https://s3.amazonaws.com; object-src 'self'",
+   "description": "Hands down, the best home page for Chrome. Beautiful wallpapers, amazing features, blazingly fast!",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApOg8d2wvM9fS1Y15P2BHsVifGJ3bkM5wx1pDVxauJVVqCKYb1EsOG1usPtAy4O6OQ5FLadynPcFRJkAJA27InQDm1LqaBdAJR3nQxNvhtpAs78MFEBirQZO130i1GgT/KfHZx0zgEIArckmsR1pqRvdf1JcHkfRuLk5oNBVzYAXX/UxLikQ//7GhtJLb+h1ki4r3K4KgR/Y4avWqbnQ7Bxx2c145ee7rlY08vy9MhJ+uuozM10wayLVA9PH+ypMISAviCnZ99biXKoDF8Mv/RROnSIIlGRagoX1g5nxWskwDl2ct2VlL3/IARlwNwoXlc4PND6F4dsQT56sRe0VGnwIDAQAB",
+   "manifest_version": 2,
+   "name": "Start - A Better New Tab",
+   "optional_permissions": [ "bookmarks" ],
+   "options_page": "tab.html#options",
+   "permissions": [ "geolocation", "topSites", "management", "unlimitedStorage", "storage", "\u003Call_urls>", "notifications", "idle" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.8.14"
+}

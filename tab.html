@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>body { background-color: #111; }</style>
+        <link rel="stylesheet" type="text/css" href="static/css/base.css" />
+        <title>New Tab</title>
+        <meta charset="utf-8"> 
+    </head>
+    <body>
+        <div id="footer">
+        </div>
+        <div id="container" class="cf">
+            <section data-name="Weather" data-module="weather">
+                <div class="content">
+                    <div class="box weather">
+                        <div id="online">
+                            <div id="conditions">
+                                <div id="map"></div>
+                            </div>
+                            <div id="weather_details">
+                                <ul id="hourly">
+                                </ul>
+                                <ul id="weather">
+                                </ul>
+                                <div id="location"></div>
+                            </div>
+                        </div>
+                        <div id="offline">
+                            You need to be online to get weather updates
+                        </div>
+                        <div id="loading">
+                            <span>
+                            Loading your weather forecast
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-name="News" data-module="rss">
+                <div class="content">
+                    <div class="feedReader itemList">
+                        <div class="box header">
+                            <form class="feedForm">
+                                <div class="ico ico-rss"></div> 
+                                <input type="text" class="feedUrl" placeholder="Add an RSS Feed" />
+                                <span class="icomoon right"></span>
+                            </form>
+                        </div>
+                        <ul class="list">
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section data-name="YouTube" data-module="youtube">
+                <div class="content itemList">
+                    <div class="box header textonly">
+                        <div class="ico ico-youtube"></div> <a href="http://youtube.com">Popular on YouTube</a>
+                    </div>
+                    <ul class="list" id="youtube"></ul>
+                </div>
+            </section>
+            <section data-name="Gmail" data-module="gmail">
+                <div class="content itemList">
+                    <div class="box header textonly">
+                        <div class="ico ico-youtube"></div> <a href="http://google.com/mail">Gmail</a>
+                    </div>
+                    <ul class="list" id="gmail"></ul>
+                </div>
+            </section>
+            <section data-name="Calendar" data-module="calendar">
+                <div class="content itemList">
+                    <div class="box header textonly">
+                        <div class="ico ico-calendar"></div> <a href="http://google.com/calendar">Calendar</a>
+                    </div>
+                    <ul class="list" id="calendar"></ul>
+                </div>
+            </section>
+            <section data-name="Apps" data-module="apps">
+                <div class="content itemList">
+                    <div class="box header textonly">
+                        <div class="ico ico-apps"></div> <a id="apps-link" href="chrome://apps">Apps</a>
+                    </div>
+                    <ul id="appList" class="boxItemList"></ul>
+                </div>
+            </section>
+            <section data-name="Notepad" data-module="notepad">
+                <div class="content">
+                    <div class="box editable" id="notepad">
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </section>
+            <section data-name="Stocks" data-module="stocks">
+                <div class="content itemList">
+                    <div class="box header textonly">
+                        <div class="ico ico-stocks"></div> <a href="http://google.com/finance">Stocks</a>
+                    </div>
+                    <ul class="list" id="stockList"></ul>
+                </div>
+            </section>
+            
+            <section data-name="To Do" data-module="todo">
+                <div class="content itemList">
+                    <div class="box header textonly">
+                        <div class="ico ico-todo"></div> To Do
+                    </div>
+                    <ul class="list" id="todo"></ul>
+                </div>
+            </section>
+            
+            <section data-name="Clock" data-module="clock">
+                <div class="content clock">
+                    <div id="clock"></div>
+                    <div id="day"></div>
+                </div>
+            </section>
+            
+            <section data-name="Top Sites" data-module="topSites">
+                <div class="content itemList">
+                    <div class="box header textonly">
+                        <div class="ico ico-topSites"></div> Top Sites
+                    </div>
+                    <ul class="list" id="topSites"></ul>
+                </div>
+            </section>
+            
+            <section data-name="Facebook" data-module="facebook" id="facebook">
+                <div class="content itemList">
+                    <div class="box header textonly">
+                        <div class="ico ico-facebook"></div> <a href="http://facebook.com">Facebook</a>
+                    </div>
+                    <div class="box">
+                        <form action="https://www.facebook.com/search/more/" method="get">
+                            <input type="text" name="q" placeholder="Search facebook..." />
+                        </form>
+                    </div>
+                    <ul class="list" style="margin-top: 5px;">
+                        <li class="linked">
+                            <a href="https://facebook.com/notifications">
+                                <span class="count" id="fb_notifications"></span>
+                                <img src="chrome://favicon/https://www.facebook.com/" />
+                                Notifications
+                            </a>
+                        </li>
+                        <li class="linked">
+                            <a href="https://facebook.com/messages">
+                                <span class="count" id="fb_notifications_messages"></span>
+                                <img src="chrome://favicon/https://www.facebook.com/" />
+                                Messages
+                            </a>
+                        </li>
+                        <li class="linked">
+                            <a href="https://www.facebook.com/friends/requests/">
+                                <img src="chrome://favicon/https://www.facebook.com/" />
+                                Friend Requests
+                            </a>
+                        </li>
+                        <li class="linked">
+                            <a href="https://www.facebook.com/events">
+                                <img src="chrome://favicon/https://www.facebook.com/" />
+                                Events
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>            
+            
+            <section data-name="Uber" data-module="uber" id="uber">
+                <div class="content itemList">
+                    <div class="box header textonly">
+                        <div class="ico ico-uber"></div> <a href="https://m.uber.com/sign-up?client_id=OV_FjVLBlQPrQQNfgsz-r7rKPkdGLWIE">Uber</a>
+                    </div>
+                    <ul class="list">
+                    </ul>
+                </div>
+            </section>
+            
+        </div>
+        <div class="buttons">
+
+            
+            <button class="menu-toggle menu-wide" data-menu="bookmarks-menu">Bookmarks <span class="icomoon"></span>
+                    <ul id="bookmarks-menu" class="menu-toggle-menu">
+                    </ul>
+            </button>
+            <button class="menu-toggle" data-menu="chrome-menu">Chrome <span class="icomoon"></span>
+                <ul id="chrome-menu" class="menu-toggle-menu">
+                    <li data-url="chrome://apps">Apps</li>
+                    <li data-url="chrome://extensions">Extensions</li>
+                    <li data-url="chrome://history">History</li>
+                    <li data-url="chrome://bookmarks">Bookmarks</li>
+                    <li data-url="chrome://downloads">Downloads</li>
+                    <li data-url="chrome://settings">Settings</li>
+                    <li data-url="https://chrome.google.com/webstore/search-extensions/64px.com">Store</li>
+                    <li data-url="https://www.google.com/_/chrome/newtab?espv=2&ie=UTF-8">Default</li>
+                </ul>
+            </button>
+            <form action="https://www.google.com/search" method="get" id="search_form">
+                <input type="text" id="search" name="q" placeholder="Google search" />
+            </form>
+            <button id="options_button">Settings</button> 
+            <button id="share_button">Share</button> 
+        </div>
+        <div id="ticker-left"></div>
+        <div id="ticker-right"></div>
+        <div id="title">
+            <ul class="hoverMenu">
+            </ul>
+            <span class="name"></span>
+        </div>
+        <div id="review">
+            <b>We love feedback!</b>
+            <p>
+                <a href="https://chrome.google.com/webstore/detail/start-a-better-new-tab/kgifkabikplflflabkllnpidlbjjpgbp/reviews">Leave a review</a> or <a href="">Hide this</a>
+            </p>
+            <p>
+                
+            </p>
+        </div>
+        <div id="first_wrap" class="blackout hidden">
+            <div id="first">
+                <b>Welcome to Start</b>
+                <p>
+                    Here are some tips:
+                </p>
+                <ol>
+                    <li>Change your wallpaper by clicking the <b>Settings</b> button in the top right</li>
+                    <li>Also in settings, change which views you want to available by clicking on the icons</li>
+                </ol>
+            </div>
+        </div>
+        <script src="static/js/require.js" data-main="static/js/main.js"></script>
+    </body>
+</html>
