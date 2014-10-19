@@ -17,7 +17,7 @@
    "name": "Start - A Better New Tab",
    "optional_permissions": [ "bookmarks" ],
    "options_page": "tab.html#options",
-   "permissions": [ "geolocation", "topSites", "management", "unlimitedStorage", "storage", "\u003Call_urls>", "notifications", "idle" ],
+   "permissions": [ "geolocation", "topSites", "management", "unlimitedStorage", "storage", "\u003Call_urls>", "notifications", "idle", "sessions","tabs" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "2.8.14"
 }

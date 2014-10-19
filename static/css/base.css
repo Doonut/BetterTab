@@ -47,6 +47,10 @@ a:visited {
     color: #111;
     opacity: 1;
 }
+#recenttabs a:visited {
+    color: #111;
+    opacity: 1;
+}
 
 body {
     margin: 0px;
@@ -912,7 +916,10 @@ i.ico {
     background-color: #CC181E;
     -webkit-font-smoothing: antialiased;
 }
-
+.ico-recenttabs {
+    background-color: yellow;
+    -webkit-font-smoothing: antialiased;
+}
 .ico-facebook {
     background-color: #3b5998;
     -webkit-font-smoothing: antialiased;
